@@ -1,118 +1,79 @@
-
 <!DOCTYPE html>
 <html>
 
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Titan : Distributed Graph Database" />
+    <meta name="description" content="Titan : titan" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Titan: 分布式图数据库</title>
+    <title>Titan</title>
   </head>
 
   <body>
-  
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a target=_blank id="forkme_banner" href="https://github.com/thinkaurelius/titan/wiki">View Documentation</a>
-        <!--<img src="images/titan-banner.gif" />-->
-          <h1 id="project_title">TITAN 中文站</h1>
-          <h2 id="project_tagline">下一代分布式图数据库</h2>
-          <section id="downloads">                                                                                                                  
-              <a target=_blank class="zip_download_link" href="http://s3.thinkaurelius.com/downloads/titan/titan-all-0.4.4.zip">Download this project as a .zip file</a>              
-          </section>
+          <a id="forkme_banner" href="https://github.com/titan-cn/titan-cn">View on GitHub</a>
+
+          <h1 id="project_title">Titan</h1>
+          <h2 id="project_tagline">titan</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/titan-cn/titan-cn/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/titan-cn/titan-cn/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<img id="titanlogo" src="images/titan-logo2.png" />
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
 
-<p>Titan是一个分布式的<a target=_blank href="http://en.wikipedia.org/wiki/Graph_database">图数据库</a>，支持横向扩展，可容纳数千亿个顶点和边。
-Titan支持事务，并且可以支撑<a target=_blank href="http://thinkaurelius.com/2012/08/06/titan-provides-real-time-big-graph-data/">上千并发用户和</a> 计算<a target=_blank href="http://thinkaurelius.com/2013/05/13/educating-the-planet-with-pearson/">复杂图形遍历</a>。</p>
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
 
-<p>Titan包含下面这些特性:</p>
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
-<ul>
-<li>弹性与线性扩展</li>
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
 
-<li>分布式架构，可容错</li>
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<li>支持多数据中心的高可用和热备</li>
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
 
-<li>支持 <a target=_blank href="http://en.wikipedia.org/wiki/ACID">ACID</a> and <a href="http://en.wikipedia.org/wiki/Eventual_consistency">和最终一致性</a>.</li>
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<li>支持多种<a target=_blank href="https://github.com/thinkaurelius/titan/wiki/Storage-Backend-Overview">存储后端</a>:
-<ul>
-<li><a target=_blank href="http://cassandra.apache.org/">Apache Cassandra</a></li>
-<li><a target=_blank href="http://hbase.apache.org/">Apache HBase</a></li>
-<li><a target=_blank href="http://www.oracle.com/technetwork/database/berkeleydb/overview/index-093405.html">Oracle BerkeleyDB</a></li>
-<li><a target=_blank href="https://github.com/pdbeaman/persistit">Akiban Persistit</a></li>
-</ul>
-</li>
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
-<li>支持位置、数字范围和全文检索:
-<ul>
-<li><a target=_blank href="http://www.elasticsearch.org/">ElasticSearch</a></li>
-<li><a target=_blank href="http://lucene.apache.org/">Apache Lucene</a></li>
-</ul>
-</li>
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<li>原生支持 <a target=_blank href="http://www.tinkerpop.com">TinkerPop</a> 软件栈:
-<ul>
-<li><a target=_blank href="http://gremlin.tinkerpop.com">Gremlin</a> graph query language</li>
-<li><a target=_blank href="http://frames.tinkerpop.com">Frames</a> object-to-graph mapper</li>
-<li><a target=_blank href="http://rexster.tinkerpop.com">Rexster</a> graph server</li>
-<li><a target=_blank href="http://blueprints.tinkerpop.com">Blueprints</a> standard graph API</li>
-</ul>
-</li>
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
 
-<li>开源协议<a target=_blank href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2</a> license</li>
-</ul>
-
-<p><a target=_blank href="https://github.com/thinkaurelius/titan/wiki/Downloads">下载</a> Titan 或者 从GitHub上<a target=_blank href="https://github.com/thinkaurelius/titan">clone</a>。 
-阅读<a target=_blank href="https://github.com/thinkaurelius/titan/wiki">Titan 官方文档</a> ，也可以加入<a target=_blank href="https://groups.google.com/forum/#!forum/aureliusgraphs">官方邮件组</a>.<br />
-
-<p>如果需要<a target=_blank href="http://thinkaurelius.com/subscription/">商业支持</a>, 可以 <a target=_blank href="mailto:info@thinkaurelius.com">联系</a><a target=_blank href="http://thinkaurelius.com">Aurelius</a>的专家。</p>
-
-<p>如果你也对Titan感兴趣，可以联系<a target=_blank href="http://findhy.com/about/">Findhy</a>。</p>
-
-<h2> 快速开始 </h2>
-
-<div class="highlight"><pre><span class="nt">&lt;dependency&gt;</span>
-   <span class="nt">&lt;groupId&gt;</span>com.thinkaurelius.titan<span class="nt">&lt;/groupId&gt;</span>
-   <span class="nt">&lt;artifactId&gt;</span>titan-core<span class="nt">&lt;/artifactId&gt;</span>
-   <span class="nt">&lt;version&gt;</span>0.4.4<span class="nt">&lt;/version&gt;</span>
-<span class="nt">&lt;/dependency&gt;</span>
-<span class="c">&lt;!-- core, all, cassandra, hbase, berkeleyje, es, lucene, persistit --&gt;</span>
-</pre></div>
-
-<br>
-<div class="highlight"><pre><span class="c1">// who is hercules' grandfather?</span>
-<span class="n">g</span><span class="o">.</span><span class="na">V</span><span class="o">(</span><span class="s1">'name'</span><span class="o">,</span><span class="s1">'hercules'</span><span class="o">).</span><span class="na">out</span><span class="o">(</span><span class="s1">'father'</span><span class="o">).</span><span class="na">out</span><span class="o">(</span><span class="s1">'father'</span><span class="o">).</span><span class="na">name</span>
-</pre></div>
-
-<p>更多内容请参考<a target=_blank href="https://github.com/thinkaurelius/titan/wiki/Getting-Started">官方手册</a>，或者参考我的这篇博客<a target=_blank href="http://findhy.com/blog/2014/06/19/titan-tutorial/">Titan Tutorial</a></p>
-
-
-</section>
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Titan由 <a target=_blank href="http://thinkaurelius.com">Aurelius</a>维护，本站翻译自<a target=_blank href="http://thinkaurelius.github.io/titan/">Titan</a>，非官方指定，目前由我个人维护，如有疑问或者对Titan感兴趣可以联系<a target=_blank href="http://findhy.com/about/">Findhy</a></p>
-        <a href="https://twitter.com/aureliusgraphs" class="twitter-follow-button" data-show-count="false">Follow @aureliusgraphs</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="./javascripts/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        &nbsp; <iframe src="http://ghbtns.com/github-btn.html?user=thinkaurelius&repo=titan&type=watch&count=true&size=small"
-  allowtransparency="true" frameborder="0" scrolling="0" width="120" height="21"></iframe>
-    </footer>
+        <p class="copyright">Titan maintained by <a href="https://github.com/titan-cn">titan-cn</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
     </div>
+
+    
 
   </body>
 </html>
